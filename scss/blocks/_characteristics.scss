@@ -1,0 +1,100 @@
+.characteristics {
+  &__wrapper {
+    position: relative;
+    z-index: 1;
+  }
+  // .characteristics__title
+
+  &__title {
+    padding: 150px 0 55px 25px;
+  }
+
+  // .characteristics__inner
+
+  &__inner {
+    display: flex;
+    padding-left: 50px;
+    justify-content: space-between;
+  }
+
+  // .characteristics__content
+
+  &__content {
+  }
+
+  // .characteristics__item
+
+  &__item {
+    margin-top: 25px;
+    max-width: 280px;
+    position: relative;
+    & + & {
+      margin-top: 140px;
+    }
+    &.topleft::before {
+      position: absolute;
+      content: "";
+      background-image: url("./images/icons/decor-topleft.svg");
+      background-repeat: no-repeat;
+      width: 242px;
+      height: 132px;
+      color: #c4c4c4;
+      right: -169px;
+      top: 16px;
+    }
+    &.bottomleft::before {
+      position: absolute;
+      content: "";
+      background-image: url("./images/icons/decor-bottomleft.svg");
+      background-repeat: no-repeat;
+      width: 357px;
+      height: 87px;
+      color: #c4c4c4;
+      right: -290px;
+      top: -62px;
+    }
+    &.topright::before {
+      position: absolute;
+      content: "";
+      background-image: url("./images/icons/decor-topright.svg");
+      background-repeat: no-repeat;
+      width: 214px;
+      height: 105px;
+      color: #c4c4c4;
+      left: -233px;
+      top: 16px;
+    }
+    &.bottomright::before {
+      position: absolute;
+      content: "";
+      background-image: url("./images/icons/decor-bottomright.svg");
+      background-repeat: no-repeat;
+      width: 123px;
+      height: 105px;
+      color: #c4c4c4;
+      left: -143px;
+      top: -45px;
+    }
+  }
+
+  // .characteristics__item-title
+
+  &__item-title {
+    font-size: 21px;
+    line-height: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  // .characteristics__item-text
+
+  &__item-text {
+    opacity: 0.6;
+  }
+
+  // .characteristics__img
+
+  &__img {
+    margin: 0 -115px;
+  }
+}

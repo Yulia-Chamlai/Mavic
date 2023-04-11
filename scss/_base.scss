@@ -1,0 +1,131 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  font-family: $main-font;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 150%;
+  color: $main-color;
+  @media (max-width: 540px) {
+    line-height: 145%;
+    font-size: 14px;
+  }
+}
+@font-face {
+  font-family: sf-pro-text-regular, sans-serif;
+  src: url("./fonts/sf-pro-text-regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: sf-pro-text-semibold, sans-serif;
+  src: url("./fonts/sf-pro-text-semibold.ttf");
+  font-weight: 600;
+}
+.container {
+  max-width: 1240px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+li {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+button {
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+}
+.btn {
+  color: $main-color;
+  padding: 7px 28px;
+  background-color: transparent;
+  border: 1px solid $main-color;
+  width: 115px;
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.5s all;
+  &:hover {
+    background-color: $main-color;
+    color: black;
+  }
+}
+.section-page {
+  position: relative;
+  background-image: url("./images/secondary-bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding-bottom: 30px;
+  overflow-y: auto;
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(
+      107.54deg,
+      rgba(23, 26, 28, 0.72) 0%,
+      #5e5e57 100%
+    );
+    opacity: 0.15;
+    z-index: 0;
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 10px;
+    background-image: url("./images/icons/scroll-down.svg");
+    background-repeat: no-repeat;
+    bottom: 15px;
+    left: 49.5%;
+    color: $main-color;
+    z-index: 2;
+  }
+}
+
+.section-title {
+  font-size: 44px;
+  line-height: 52px;
+  font-family: $title-font;
+  color: $main-color;
+  padding-left: 25px;
+  font-weight: 400;
+  @media (max-width: 580px) {
+    padding-bottom: 20px;
+    font-size: 32px;
+    line-height: 40px;
+    padding-left: 0;
+  }
+}

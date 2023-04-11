@@ -1,0 +1,124 @@
+.section-page--top {
+  padding-bottom: 30px;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 10px;
+    background-image: url("./images/icons/scroll-down.svg");
+    background-repeat: no-repeat;
+    bottom: 15px;
+    left: 49.5%;
+    color: $main-color;
+    z-index: 2;
+  }
+}
+.top {
+  background: url("./images/background.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background: radial-gradient(
+      45.97% 54.43% at 50% 45.57%,
+      rgba(23, 26, 28, 0) 50.28%,
+      rgba(23, 26, 28, 0.00225974) 50.29%,
+      rgba(4, 5, 5, 0.820343) 58.72%,
+      rgba(5, 5, 6, 0.792703) 80.08%,
+      #000000 87.89%
+    );
+    opacity: 0.4;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+  }
+  // .top__content
+  &__wrapper {
+    display: flex;
+    height: 100vh;
+    padding-bottom: 53px;
+    z-index: 1;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: flex-end;
+    height: 100%;
+    z-index: 1;
+    text-align: center;
+  }
+
+  // .top__title
+
+  &__title {
+    font-size: 96px;
+    line-height: 114px;
+    font-weight: 600;
+    font-family: $title-font;
+    color: $main-color;
+    margin-bottom: 25px;
+    @media (max-width: 1366px) {
+      font-size: 76px;
+      line-height: 88px;
+      margin-bottom: 20px;
+    }
+    @media (max-width: 540px) {
+      display: none;
+    }
+    @media (max-height: 320px) {
+      display: none;
+    }
+  }
+  &__img {
+    margin: 0 auto;
+    @media (max-width: 1366px) {
+      width: 80%;
+    }
+    @media (max-height: 320px) {
+      width: 60%;
+    }
+  }
+  // .top__text
+
+  &__text {
+    max-width: 367px;
+    text-align: center;
+    margin: 25px auto 0;
+    opacity: 0.6;
+    @media (max-height: 320px) {
+      margin: 8px auto 0;
+    }
+  }
+
+  // .top__social
+
+  &__social {
+    display: flex;
+    gap: 50px;
+    margin: 0 auto;
+    margin-top: 35px;
+    @media (max-width: 540px) {
+      margin: 35% auto 40px;
+    }
+    @media (max-height: 320px) {
+      margin-top: 8px;
+    }
+  }
+
+  // .top__social-link
+
+  &__social-link {
+    opacity: 0.5;
+    transition: 0.5s all;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
