@@ -22,3 +22,8 @@ document.querySelectorAll(".header__list-link").forEach((n) => {
     navList.classList.remove("active");
   });
 });
+
+$(".questions__item").on("click", function () {
+  $(".questions__item").removeClass("questions__item--active");
+  $(this).addClass("questions__item--active");
+});
