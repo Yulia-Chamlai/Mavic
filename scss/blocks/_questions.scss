@@ -1,18 +1,31 @@
 .questions {
   // .questions__wrapper
-
   &__wrapper {
     position: relative;
     z-index: 1;
   }
-
   // .questions__title
 
   &__title {
     padding: 150px 0 25px 40px;
+    @media (max-width: 1366px) {
+      padding: 100px 0 25px 40px;
+    }
+    @media (max-width: 1366px) {
+      padding: 100px 0 25px 0;
+    }
+    @media (max-width: 640px) {
+      padding: 50px 0 25px 0;
+      font-size: 25px;
+      line-height: 30px;
+    }
   }
   &__inner {
     padding-left: 25px;
+    padding-bottom: 50px;
+    @media (max-width: 840px) {
+      padding-left: 0;
+    }
   }
   // .questions__item
 
@@ -23,6 +36,13 @@
     background-color: rgba(0, 0, 0, 0.3);
     margin-bottom: 5px;
     transition: all 0.5s;
+    @media (max-width: 840px) {
+      max-width: 80%;
+      padding: 20px;
+    }
+    @media (max-width: 540px) {
+      padding: 10px;
+    }
     &::before {
       position: absolute;
       content: url("./images/icons/bottom-arrow.svg");
@@ -34,6 +54,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      @media (max-width: 576px) {
+        width: 67px;
+        height: 60px;
+        right: -67px;
+      }
     }
     &:nth-child(3):after {
       position: absolute;
@@ -42,12 +67,22 @@
       height: 125px;
       top: 0;
       right: -392px;
+      @media (max-width: 1366px) {
+        display: none;
+      }
     }
     &-title {
       font-size: 21px;
       line-height: 28px;
       font-weight: 500;
       margin-bottom: 25px;
+      @media (max-width: 840px) {
+        font-size: 18px;
+      }
+      @media (max-width: 540px) {
+        font-size: 15px;
+        line-height: 21px;
+      }
     }
     &-text {
       padding-left: 10px;
@@ -58,6 +93,9 @@
 }
 .questions__item.questions__item--active {
   padding: 20px 20px 75px 40px;
+  @media (max-width: 840px) {
+    padding: 20px 20px 50px 20px;
+  }
 }
 .questions__item--active {
   .questions__item-text {
@@ -66,5 +104,10 @@
   }
   &::before {
     content: url("./images/icons/top-arrow.svg");
+  }
+}
+.section-page.questions::after {
+  @media (max-width: 1366px) {
+    display: none;
   }
 }

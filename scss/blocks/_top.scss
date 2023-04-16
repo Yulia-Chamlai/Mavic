@@ -96,12 +96,7 @@
       margin: 8px auto 0;
     }
   }
-
-  // .top__social
-
   &__social {
-    display: flex;
-    gap: 50px;
     margin: 0 auto;
     margin-top: 35px;
     @media (max-width: 540px) {
@@ -111,10 +106,11 @@
       margin-top: 8px;
     }
   }
-
-  // .top__social-link
-
-  &__social-link {
+}
+.social {
+  display: flex;
+  gap: 50px;
+  &__link {
     opacity: 0.5;
     transition: 0.5s all;
     &:hover {

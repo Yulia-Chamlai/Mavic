@@ -70,9 +70,11 @@ button {
   background-color: transparent;
   border: 1px solid $main-color;
   width: 115px;
+  text-transform: uppercase;
   cursor: pointer;
   display: inline-block;
   transition: 0.5s all;
+  text-align: center;
   &:hover {
     background-color: $main-color;
     color: black;
@@ -131,4 +133,8 @@ button {
     line-height: 40px;
     padding-left: 0;
   }
+}
+input:focus,
+textarea:focus {
+  outline: none;
 }

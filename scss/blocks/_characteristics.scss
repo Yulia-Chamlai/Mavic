@@ -17,6 +17,11 @@
       font-size: 35px;
       padding: 80px 0 15px 0;
     }
+    @media (max-width: 540px) {
+      font-size: 25px;
+      line-height: 30px;
+      padding: 50px 0 15px 0;
+    }
   }
 
   // .characteristics__inner
@@ -139,6 +144,10 @@
     line-height: 28px;
     font-weight: 700;
     margin-bottom: 10px;
+    @media (max-width: 540px) {
+      font-size: 18px;
+      line-height: 22px;
+    }
   }
 
   // .characteristics__item-text
