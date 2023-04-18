@@ -5,6 +5,7 @@
 }
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 body {
   font-family: $main-font;
@@ -94,15 +95,12 @@ button {
   &::before {
     position: absolute;
     content: "";
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
     background: linear-gradient(
       107.54deg,
       rgba(23, 26, 28, 0.72) 0%,
       #5e5e57 100%
     );
+    background-size: cover;
     opacity: 0.15;
     z-index: 0;
   }
