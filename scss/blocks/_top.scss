@@ -11,6 +11,22 @@
     left: 49.5%;
     color: $main-color;
     z-index: 2;
+    animation: movedown 1.5s ease-in-out infinite both;
+    @keyframes movedown {
+      from {
+        transform: translateY(-20px);
+      }
+      50% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(10px);
+      }
+    }
+
+    @media (max-width: 1366px) {
+      display: none;
+    }
   }
 }
 .top {
@@ -31,11 +47,12 @@
       rgba(5, 5, 6, 0.792703) 80.08%,
       #000000 87.89%
     );
-    opacity: 0.4;
-    top: 0;
-    bottom: 0;
     left: 0;
     right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.4;
+    min-height: 1080px;
     z-index: 0;
   }
   // .top__content
@@ -104,17 +121,6 @@
     }
     @media (max-height: 320px) {
       margin-top: 8px;
-    }
-  }
-}
-.social {
-  display: flex;
-  gap: 50px;
-  &__link {
-    opacity: 0.5;
-    transition: 0.5s all;
-    &:hover {
-      opacity: 1;
     }
   }
 }
