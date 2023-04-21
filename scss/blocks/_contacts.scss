@@ -219,8 +219,8 @@
   @media (max-width: 940px) {
     font-size: 10px;
   }
-  @media (max-height: 641px) {
-    margin-top: 15px;
+  @media (max-width: 640px) {
+    margin-top: 0;
   }
 
   // .footer__copyright
@@ -229,6 +229,9 @@
     font-size: 13px;
     font-weight: 300;
     opacity: 0.64;
+    @media (max-width: 640px) {
+      font-size: 10px;
+    }
   }
 }
 .section-page.contacts::after {

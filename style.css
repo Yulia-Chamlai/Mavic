@@ -449,6 +449,7 @@ button {
 @media (max-width: 1366px) {
   .section-page {
     overflow-y: auto;
+    padding-bottom: 0;
   }
 }
 .section-page::before {
@@ -777,6 +778,7 @@ textarea:focus {
 @media (max-width: 1366px) {
   .section-page--top::after {
     display: none;
+    padding-bottom: 0;
   }
 }
 
@@ -808,6 +810,11 @@ textarea:focus {
   height: 100vh;
   padding-bottom: 53px;
   z-index: 1;
+}
+@media (max-width: 1366px) {
+  .top__wrapper {
+    padding-bottom: 0;
+  }
 }
 .top__content {
   display: -webkit-box;
@@ -2039,15 +2046,20 @@ textarea:focus {
     font-size: 10px;
   }
 }
-@media (max-height: 641px) {
+@media (max-width: 640px) {
   .footer {
-    margin-top: 15px;
+    margin-top: 0;
   }
 }
 .footer__copyright {
   font-size: 13px;
   font-weight: 300;
   opacity: 0.64;
+}
+@media (max-width: 640px) {
+  .footer__copyright {
+    font-size: 10px;
+  }
 }
 
 .section-page.contacts::after {

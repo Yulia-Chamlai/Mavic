@@ -91,6 +91,7 @@ button {
   padding-bottom: 30px;
   @media (max-width: 1366px) {
     overflow-y: auto;
+    padding-bottom: 0;
   }
   &::before {
     position: absolute;
