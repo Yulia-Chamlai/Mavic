@@ -164,10 +164,9 @@
         max-width: unset;
       }
       @media (max-width: 540px) {
-        width: 80%;
-      }
-      @media (max-width: 375px) {
         width: 100%;
+        object-fit: cover;
+        height: auto;
       }
     }
     &::before {
@@ -203,6 +202,9 @@
     padding-left: 32px;
     @media (max-width: 1100px) {
       padding-left: 26px;
+    }
+    @media (max-width: 540px) {
+      padding-left: 0;
     }
   }
 
