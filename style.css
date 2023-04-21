@@ -784,7 +784,9 @@ textarea:focus {
 
 .top {
   background: url("./images/background.jpg");
-  height: 100vh;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
